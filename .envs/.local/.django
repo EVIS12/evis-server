@@ -1,0 +1,18 @@
+# General
+
+# ------------------------------------------------------------------------------
+
+USE_DOCKER=yes
+IPYTHONDIR=/app/.ipython
+
+
+# Email
+
+DJANGO_EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+DJANGO_EMAIL_HOST=smtppro.zoho.com
+DJANGO_EMAIL_PORT=465
+DJANGO_EMAIL_HOST_USER=evis.register.form@momenwael.com
+DJANGO_DEFAULT_FROM_EMAIL=evis.register.form@momenwael.com
+DJANGO_EMAIL_HOST_PASSWORD=hE7u4VwxMWrQ
+DJANGO_EMAIL_TO=faresemadx@gmail.com
+MODE=DEVELOPMENT
