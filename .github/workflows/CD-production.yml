@@ -1,0 +1,20 @@
+name: CD | Production
+
+on:
+  push:
+    branches: ["main", "production"]
+    paths-ignore: ["docs/**"]
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: evisBackendProduction
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          clean: false
+
+      - name: Build and Run Server
+        run: sudo systemctl restart evisProduction.service
