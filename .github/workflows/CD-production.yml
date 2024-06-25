@@ -1,0 +1,20 @@
+name: CD | Production
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore: ["docs/**"]
+  workflow_dispatch:
+
+jobs:
+  deployment:
+    runs-on: evisProduction
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          clean: false
+ 
+      - name: Build and Run Server
+        run: sudo docker-compose -f production.yml up --build
