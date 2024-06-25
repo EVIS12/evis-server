@@ -19,7 +19,7 @@ drf-spectacular==0.26.4  # https://github.com/tfranzel/drf-spectacular
 
 # Added By Fares Emad
 # ------------------------------------------------------------------------------
-django_filter==23.3 # https://django-filter.readthedocs.io/en/stable/
+django_filter==24.2 # https://django-filter.readthedocs.io/en/stable/
 django-solo==2.1.0  # https://pypi.org/project/django-solo/
 django-ckeditor==6.7.0 # https://django-ckeditor.readthedocs.io/en/latest/
 drf-nested-routers==0.93.4 # https://github.com/alanjds/drf-nested-routers
